@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MapOut</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./main.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.slim.js"
+			  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+			  crossorigin="anonymous"></script>
+		
+    </head>
+    <body>
+        <div id="gridBox">
+            <div class="gridItem">
+                <img id="LCog" src="cogwheel.png">
+            </div>
+            <div class="gridItem">
+                <img id="RCog" src="cogwheel.png">
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#LCog, #RCog, .gridItems").hover(function(){
+                $('#LCog').css({animationDuration:'8s'});
+                $('#RCog').css({animationDuration:'8s'});
+            });
+            $("body, #gridBox").hover(function(){
+                $('#LCog').css({animationDuration:'4s'});
+                $('#RCog').css({animationDuration:'4s'});
+            });
+        })
+
+    </script>
+
+</html>

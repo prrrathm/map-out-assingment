@@ -1,0 +1,56 @@
+body{
+    display: flexbox;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    align-content: center;
+    font-weight: 900;
+}
+#gridBox{
+    min-width: 40%;
+    min-height: 60vh;
+    padding: 20px;
+    margin: 0;
+}
+.gridItem{
+    display: inline-block;
+    /* background-color: aquamarine; */
+    position: relative;
+}
+#RCog, #LCog{
+    display: inline;
+    position: relative;
+    /* background-color: blueviolet; */
+    height: 60vh;
+    transition: 900ms;
+    animation: rotation 4s linear infinite ;
+}
+#RCog{
+    animation-direction: reverse;
+    /* animation: rotation 4s linear infinite reverse; */
+}
+#LCog{
+}
+/* #RCog:hover, #LCog:hover{
+    animation-duration: 6s;
+} */
+.gridItem::before{
+    content: 'Over the past couple of years, interest in Linux on the desktop has slowly increased.';
+    /* background-color: brown; */
+    position: absolute;
+    z-index: 5;
+    top: 36%;
+    left: 30%;
+    right: 30%;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
