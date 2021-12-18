@@ -9,7 +9,10 @@ body{
     font-weight: 900;
 }
 #gridBox {
-    min-width: 40%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+    width: 63%;
     min-height: 60vh;
     padding: 20px;
     margin: 0;
@@ -23,9 +26,9 @@ body{
     display: inline;
     position: relative;
     /* background-color: blueviolet; */
-    height: 70vh;
+    height: 450px;
     transition: 900ms;
-    animation: rotation 4s linear infinite ;
+    animation: rotation 4s linear infinite;
 }
 #RCog{
     animation-direction: reverse;
@@ -42,11 +45,10 @@ body{
     /* background-color: brown; */
     position: absolute;
     z-index: 5;
-    top: 32%;
-    left: 30%;
+    top: 30%;
+    left: 33%;
     right: 30%;
 }
-
 @keyframes rotation {
     from {
       transform: rotate(0deg);
