@@ -8,22 +8,22 @@ body{
     align-content: center;
     font-weight: 900;
 }
-#gridBox{
+#gridBox {
     min-width: 40%;
     min-height: 60vh;
     padding: 20px;
     margin: 0;
 }
-.gridItem{
+.gridItem {
     display: inline-block;
     /* background-color: aquamarine; */
     position: relative;
 }
-#RCog, #LCog{
+#RCog, #LCog {
     display: inline;
     position: relative;
     /* background-color: blueviolet; */
-    height: 60vh;
+    height: 70vh;
     transition: 900ms;
     animation: rotation 4s linear infinite ;
 }
@@ -36,12 +36,13 @@ body{
 /* #RCog:hover, #LCog:hover{
     animation-duration: 6s;
 } */
-.gridItem::before{
+/* .gridItem::before, */
+.gearText{
     content: 'Over the past couple of years, interest in Linux on the desktop has slowly increased.';
     /* background-color: brown; */
     position: absolute;
     z-index: 5;
-    top: 36%;
+    top: 32%;
     left: 30%;
     right: 30%;
 }

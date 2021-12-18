@@ -17,15 +17,29 @@
         <div id="gridBox">
             <div class="gridItem">
                 <img id="LCog" src="cogwheel.png">
+                <div class='gearText'>
+                    <h2>Personality</h2>
+                    Focuses on facts<br>
+                    Decides based on logic<br>
+                    Spontaneous<br>
+                    Extrovert
+                </div>
             </div>
             <div class="gridItem">
                 <img id="RCog" src="cogwheel.png">
+                <div class='gearText'>
+                    <h2>Interests</h2>
+                    Analysing<br>
+                    Researching<br>
+                    Experimenting<br>
+                    Problem-Solving<br>
+                </div>
             </div>
         </div>
     </body>
     <script>
         $(document).ready(function(){
-            $("#LCog, #RCog, .gridItems").hover(function(){
+            $("#LCog, #RCog, .gridItems, .gearText").hover(function(){
                 $('#LCog').css({animationDuration:'8s'});
                 $('#RCog').css({animationDuration:'8s'});
             });
